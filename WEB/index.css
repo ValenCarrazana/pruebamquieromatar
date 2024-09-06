@@ -1,0 +1,59 @@
+/* Estilos generales para todo dispositivo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 500px) {
+    header {
+        font-size: 18px;
+    }
+
+    main {
+        font-size: 14px;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+}
+
+/* Estilos para pantallas más grandes (escritorio) */
+@media screen and (min-width: 501px) {
+    .mobile-only {
+        display: none;
+    }
+    
+    main {
+        font-size: 18px;
+    }
+
+    header {
+        font-size: 24px;
+    }
+}
